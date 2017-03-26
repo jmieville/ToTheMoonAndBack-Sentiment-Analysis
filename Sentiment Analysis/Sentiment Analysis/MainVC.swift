@@ -28,21 +28,19 @@ class MainVC: UIViewController {
         
         // alchemy language
         let url = textFieldLabel.text!
-        let failure = { (error: NSError) in
+        let failure = { (error: Error) in
             print(error)
         }
         NSLog("calling GetTextSentiment url ::::::::::")
-        guard let definedURL = URL(string: url) else {
-            return
-        }
-        alchemyLanguage.getTextSentiment(fromTextFile: definedURL, failure: failure) { (sentiment) in
+        alchemyLanguage.getTextSentiment(fromContentAtURL: url, failure: failure) { (sentiment) in
             print(sentiment)
             NSLog((sentiment.docSentiment?.type)!)
             
-            
+            // setting feedback on sentiment
+            DispatchQueue.main.async {
+                self.statusLabel.text = "text status sentiment ::::::: " + (sentiment.docSentiment?.type)!
+            }
         }
-        
     }
-
 }
 
