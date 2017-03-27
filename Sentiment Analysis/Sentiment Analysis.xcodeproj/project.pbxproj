@@ -7,12 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2225CA2C5F24305C779283E8 /* Pods_Sentiment_AnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2097955ECB7730CC64B31E68 /* Pods_Sentiment_AnalysisTests.framework */; };
 		495E1A7C1E8814B6006A1710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7B1E8814B6006A1710 /* AppDelegate.swift */; };
-		495E1A7E1E8814B6006A1710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7D1E8814B6006A1710 /* ViewController.swift */; };
+		495E1A7E1E8814B6006A1710 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7D1E8814B6006A1710 /* MainVC.swift */; };
 		495E1A811E8814B6006A1710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A7F1E8814B6006A1710 /* Main.storyboard */; };
 		495E1A831E8814B6006A1710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A821E8814B6006A1710 /* Assets.xcassets */; };
 		495E1A861E8814B6006A1710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */; };
 		495E1A911E8814B6006A1710 /* Sentiment_AnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A901E8814B6006A1710 /* Sentiment_AnalysisTests.swift */; };
+		49CB7C3C1E88347E00A47585 /* AlchemyDataNewsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C281E88347E00A47585 /* AlchemyDataNewsV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C3D1E88347E00A47585 /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		49CB7C3E1E88347E00A47585 /* AlchemyVisionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C2A1E88347E00A47585 /* AlchemyVisionV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C3F1E88347E00A47585 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C2B1E88347E00A47585 /* ConversationV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C401E88347E00A47585 /* DialogV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C2C1E88347E00A47585 /* DialogV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C411E88347E00A47585 /* DiscoveryV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C2D1E88347E00A47585 /* DiscoveryV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C421E88347E00A47585 /* DocumentConversionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C2E1E88347E00A47585 /* DocumentConversionV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C431E88347E00A47585 /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C2F1E88347E00A47585 /* LanguageTranslatorV2.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C441E88347E00A47585 /* NaturalLanguageClassifierV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C301E88347E00A47585 /* NaturalLanguageClassifierV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C451E88347E00A47585 /* NaturalLanguageUnderstandingV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C311E88347E00A47585 /* NaturalLanguageUnderstandingV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C461E88347E00A47585 /* PersonalityInsightsV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C321E88347E00A47585 /* PersonalityInsightsV2.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C471E88347E00A47585 /* PersonalityInsightsV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C331E88347E00A47585 /* PersonalityInsightsV3.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C481E88347E00A47585 /* RelationshipExtractionV1Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C341E88347E00A47585 /* RelationshipExtractionV1Beta.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C491E88347E00A47585 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C351E88347E00A47585 /* RestKit.framework */; };
+		49CB7C4A1E88347E00A47585 /* RetrieveAndRankV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C361E88347E00A47585 /* RetrieveAndRankV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C4B1E88347E00A47585 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C371E88347E00A47585 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C4C1E88347E00A47585 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C381E88347E00A47585 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C4D1E88347E00A47585 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C391E88347E00A47585 /* ToneAnalyzerV3.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C4E1E88347E00A47585 /* TradeoffAnalyticsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C3A1E88347E00A47585 /* TradeoffAnalyticsV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C4F1E88347E00A47585 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C3B1E88347E00A47585 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		49CB7C521E8836DB00A47585 /* AlchemyLanguageV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CB7C531E8836DB00A47585 /* RestKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49CB7C351E88347E00A47585 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6889441D1DB462B2F5522647 /* Pods_Sentiment_Analysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69815246BAC8638045956271 /* Pods_Sentiment_Analysis.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +49,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		49CB7C511E8836B900A47585 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49CB7C521E8836DB00A47585 /* AlchemyLanguageV1.framework in CopyFiles */,
+				49CB7C531E8836DB00A47585 /* RestKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		04CB70301A42103F575A9F20 /* Pods-Sentiment Analysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment Analysis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment Analysis/Pods-Sentiment Analysis.debug.xcconfig"; sourceTree = "<group>"; };
+		11871199676AE413BE3A94A3 /* Pods-Sentiment AnalysisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment AnalysisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment AnalysisTests/Pods-Sentiment AnalysisTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2097955ECB7730CC64B31E68 /* Pods_Sentiment_AnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentiment_AnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E1A781E8814B6006A1710 /* Sentiment Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sentiment Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E1A7B1E8814B6006A1710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		495E1A7D1E8814B6006A1710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		495E1A7D1E8814B6006A1710 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		495E1A801E8814B6006A1710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495E1A821E8814B6006A1710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495E1A851E8814B6006A1710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +77,29 @@
 		495E1A8C1E8814B6006A1710 /* Sentiment AnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sentiment AnalysisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E1A901E8814B6006A1710 /* Sentiment_AnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment_AnalysisTests.swift; sourceTree = "<group>"; };
 		495E1A921E8814B6006A1710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49CB7C281E88347E00A47585 /* AlchemyDataNewsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyDataNewsV1.framework; path = Carthage/Build/iOS/AlchemyDataNewsV1.framework; sourceTree = "<group>"; };
+		49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyLanguageV1.framework; path = Carthage/Build/iOS/AlchemyLanguageV1.framework; sourceTree = "<group>"; };
+		49CB7C2A1E88347E00A47585 /* AlchemyVisionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyVisionV1.framework; path = Carthage/Build/iOS/AlchemyVisionV1.framework; sourceTree = "<group>"; };
+		49CB7C2B1E88347E00A47585 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
+		49CB7C2C1E88347E00A47585 /* DialogV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DialogV1.framework; path = Carthage/Build/iOS/DialogV1.framework; sourceTree = "<group>"; };
+		49CB7C2D1E88347E00A47585 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscoveryV1.framework; path = Carthage/Build/iOS/DiscoveryV1.framework; sourceTree = "<group>"; };
+		49CB7C2E1E88347E00A47585 /* DocumentConversionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DocumentConversionV1.framework; path = Carthage/Build/iOS/DocumentConversionV1.framework; sourceTree = "<group>"; };
+		49CB7C2F1E88347E00A47585 /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = Carthage/Build/iOS/LanguageTranslatorV2.framework; sourceTree = "<group>"; };
+		49CB7C301E88347E00A47585 /* NaturalLanguageClassifierV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageClassifierV1.framework; path = Carthage/Build/iOS/NaturalLanguageClassifierV1.framework; sourceTree = "<group>"; };
+		49CB7C311E88347E00A47585 /* NaturalLanguageUnderstandingV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageUnderstandingV1.framework; path = Carthage/Build/iOS/NaturalLanguageUnderstandingV1.framework; sourceTree = "<group>"; };
+		49CB7C321E88347E00A47585 /* PersonalityInsightsV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV2.framework; path = Carthage/Build/iOS/PersonalityInsightsV2.framework; sourceTree = "<group>"; };
+		49CB7C331E88347E00A47585 /* PersonalityInsightsV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV3.framework; path = Carthage/Build/iOS/PersonalityInsightsV3.framework; sourceTree = "<group>"; };
+		49CB7C341E88347E00A47585 /* RelationshipExtractionV1Beta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelationshipExtractionV1Beta.framework; path = Carthage/Build/iOS/RelationshipExtractionV1Beta.framework; sourceTree = "<group>"; };
+		49CB7C351E88347E00A47585 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		49CB7C361E88347E00A47585 /* RetrieveAndRankV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RetrieveAndRankV1.framework; path = Carthage/Build/iOS/RetrieveAndRankV1.framework; sourceTree = "<group>"; };
+		49CB7C371E88347E00A47585 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		49CB7C381E88347E00A47585 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = Carthage/Build/iOS/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		49CB7C391E88347E00A47585 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		49CB7C3A1E88347E00A47585 /* TradeoffAnalyticsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TradeoffAnalyticsV1.framework; path = Carthage/Build/iOS/TradeoffAnalyticsV1.framework; sourceTree = "<group>"; };
+		49CB7C3B1E88347E00A47585 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		53D185EACE3980691FEE6292 /* Pods-Sentiment AnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment AnalysisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment AnalysisTests/Pods-Sentiment AnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
+		69815246BAC8638045956271 /* Pods_Sentiment_Analysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentiment_Analysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D82404DB491C52EF4078F0 /* Pods-Sentiment Analysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment Analysis.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment Analysis/Pods-Sentiment Analysis.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +107,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CB7C3C1E88347E00A47585 /* AlchemyDataNewsV1.framework in Frameworks */,
+				49CB7C4F1E88347E00A47585 /* VisualRecognitionV3.framework in Frameworks */,
+				49CB7C4D1E88347E00A47585 /* ToneAnalyzerV3.framework in Frameworks */,
+				49CB7C401E88347E00A47585 /* DialogV1.framework in Frameworks */,
+				6889441D1DB462B2F5522647 /* Pods_Sentiment_Analysis.framework in Frameworks */,
+				49CB7C4A1E88347E00A47585 /* RetrieveAndRankV1.framework in Frameworks */,
+				49CB7C3D1E88347E00A47585 /* AlchemyLanguageV1.framework in Frameworks */,
+				49CB7C3E1E88347E00A47585 /* AlchemyVisionV1.framework in Frameworks */,
+				49CB7C4E1E88347E00A47585 /* TradeoffAnalyticsV1.framework in Frameworks */,
+				49CB7C3F1E88347E00A47585 /* ConversationV1.framework in Frameworks */,
+				49CB7C441E88347E00A47585 /* NaturalLanguageClassifierV1.framework in Frameworks */,
+				49CB7C451E88347E00A47585 /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
+				49CB7C421E88347E00A47585 /* DocumentConversionV1.framework in Frameworks */,
+				49CB7C4B1E88347E00A47585 /* SpeechToTextV1.framework in Frameworks */,
+				49CB7C471E88347E00A47585 /* PersonalityInsightsV3.framework in Frameworks */,
+				49CB7C481E88347E00A47585 /* RelationshipExtractionV1Beta.framework in Frameworks */,
+				49CB7C491E88347E00A47585 /* RestKit.framework in Frameworks */,
+				49CB7C431E88347E00A47585 /* LanguageTranslatorV2.framework in Frameworks */,
+				49CB7C4C1E88347E00A47585 /* TextToSpeechV1.framework in Frameworks */,
+				49CB7C461E88347E00A47585 /* PersonalityInsightsV2.framework in Frameworks */,
+				49CB7C411E88347E00A47585 /* DiscoveryV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2225CA2C5F24305C779283E8 /* Pods_Sentiment_AnalysisTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +145,12 @@
 		495E1A6F1E8814B6006A1710 = {
 			isa = PBXGroup;
 			children = (
+				49CB7BD71E88234B00A47585 /* Framework */,
 				495E1A7A1E8814B6006A1710 /* Sentiment Analysis */,
 				495E1A8F1E8814B6006A1710 /* Sentiment AnalysisTests */,
 				495E1A791E8814B6006A1710 /* Products */,
+				D97FE7F9EE17EA4CA6E197C1 /* Pods */,
+				D08AE8BA611C7F34AD24CBE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				495E1A7B1E8814B6006A1710 /* AppDelegate.swift */,
-				495E1A7D1E8814B6006A1710 /* ViewController.swift */,
+				495E1A7D1E8814B6006A1710 /* MainVC.swift */,
 				495E1A7F1E8814B6006A1710 /* Main.storyboard */,
 				495E1A821E8814B6006A1710 /* Assets.xcassets */,
 				495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */,
@@ -96,6 +185,53 @@
 			path = "Sentiment AnalysisTests";
 			sourceTree = "<group>";
 		};
+		49CB7BD71E88234B00A47585 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				49CB7C281E88347E00A47585 /* AlchemyDataNewsV1.framework */,
+				49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */,
+				49CB7C2A1E88347E00A47585 /* AlchemyVisionV1.framework */,
+				49CB7C2B1E88347E00A47585 /* ConversationV1.framework */,
+				49CB7C2C1E88347E00A47585 /* DialogV1.framework */,
+				49CB7C2D1E88347E00A47585 /* DiscoveryV1.framework */,
+				49CB7C2E1E88347E00A47585 /* DocumentConversionV1.framework */,
+				49CB7C2F1E88347E00A47585 /* LanguageTranslatorV2.framework */,
+				49CB7C301E88347E00A47585 /* NaturalLanguageClassifierV1.framework */,
+				49CB7C311E88347E00A47585 /* NaturalLanguageUnderstandingV1.framework */,
+				49CB7C321E88347E00A47585 /* PersonalityInsightsV2.framework */,
+				49CB7C331E88347E00A47585 /* PersonalityInsightsV3.framework */,
+				49CB7C341E88347E00A47585 /* RelationshipExtractionV1Beta.framework */,
+				49CB7C351E88347E00A47585 /* RestKit.framework */,
+				49CB7C361E88347E00A47585 /* RetrieveAndRankV1.framework */,
+				49CB7C371E88347E00A47585 /* SpeechToTextV1.framework */,
+				49CB7C381E88347E00A47585 /* TextToSpeechV1.framework */,
+				49CB7C391E88347E00A47585 /* ToneAnalyzerV3.framework */,
+				49CB7C3A1E88347E00A47585 /* TradeoffAnalyticsV1.framework */,
+				49CB7C3B1E88347E00A47585 /* VisualRecognitionV3.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		D08AE8BA611C7F34AD24CBE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69815246BAC8638045956271 /* Pods_Sentiment_Analysis.framework */,
+				2097955ECB7730CC64B31E68 /* Pods_Sentiment_AnalysisTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D97FE7F9EE17EA4CA6E197C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04CB70301A42103F575A9F20 /* Pods-Sentiment Analysis.debug.xcconfig */,
+				97D82404DB491C52EF4078F0 /* Pods-Sentiment Analysis.release.xcconfig */,
+				11871199676AE413BE3A94A3 /* Pods-Sentiment AnalysisTests.debug.xcconfig */,
+				53D185EACE3980691FEE6292 /* Pods-Sentiment AnalysisTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +239,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 495E1A951E8814B6006A1710 /* Build configuration list for PBXNativeTarget "Sentiment Analysis" */;
 			buildPhases = (
+				8159B8B25266D245AD00AFF1 /* [CP] Check Pods Manifest.lock */,
 				495E1A741E8814B6006A1710 /* Sources */,
 				495E1A751E8814B6006A1710 /* Frameworks */,
 				495E1A761E8814B6006A1710 /* Resources */,
+				6857E9224BDC05B694BE31BA /* [CP] Embed Pods Frameworks */,
+				A62A19FD9BB38D671C999954 /* [CP] Copy Pods Resources */,
+				49CB7C501E8835F400A47585 /* ShellScript */,
+				49CB7C511E8836B900A47585 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -120,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 495E1A981E8814B6006A1710 /* Build configuration list for PBXNativeTarget "Sentiment AnalysisTests" */;
 			buildPhases = (
+				F80314D96BB03831FF493E30 /* [CP] Check Pods Manifest.lock */,
 				495E1A881E8814B6006A1710 /* Sources */,
 				495E1A891E8814B6006A1710 /* Frameworks */,
 				495E1A8A1E8814B6006A1710 /* Resources */,
+				6B7A768561EE148A6BE6724C /* [CP] Embed Pods Frameworks */,
+				9DE660976FEC86C35B8CC40E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,12 +340,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49CB7C501E8835F400A47585 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AlchelmyLanguageV1.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		6857E9224BDC05B694BE31BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sentiment Analysis/Pods-Sentiment Analysis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B7A768561EE148A6BE6724C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sentiment AnalysisTests/Pods-Sentiment AnalysisTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8159B8B25266D245AD00AFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE660976FEC86C35B8CC40E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sentiment AnalysisTests/Pods-Sentiment AnalysisTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A62A19FD9BB38D671C999954 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sentiment Analysis/Pods-Sentiment Analysis-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80314D96BB03831FF493E30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		495E1A741E8814B6006A1710 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495E1A7E1E8814B6006A1710 /* ViewController.swift in Sources */,
+				495E1A7E1E8814B6006A1710 /* MainVC.swift in Sources */,
 				495E1A7C1E8814B6006A1710 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,9 +589,14 @@
 		};
 		495E1A961E8814B6006A1710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CB70301A42103F575A9F20 /* Pods-Sentiment Analysis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GL695U4E9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sentiment Analysis/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MievilleKampolJean-Marc.Sentiment-Analysis";
@@ -350,9 +607,14 @@
 		};
 		495E1A971E8814B6006A1710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D82404DB491C52EF4078F0 /* Pods-Sentiment Analysis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8GL695U4E9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sentiment Analysis/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MievilleKampolJean-Marc.Sentiment-Analysis";
@@ -363,6 +625,7 @@
 		};
 		495E1A991E8814B6006A1710 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11871199676AE413BE3A94A3 /* Pods-Sentiment AnalysisTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,6 +641,7 @@
 		};
 		495E1A9A1E8814B6006A1710 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53D185EACE3980691FEE6292 /* Pods-Sentiment AnalysisTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +674,7 @@
 				495E1A971E8814B6006A1710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		495E1A981E8814B6006A1710 /* Build configuration list for PBXNativeTarget "Sentiment AnalysisTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +683,7 @@
 				495E1A9A1E8814B6006A1710 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
