@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,6 +42,9 @@
                                         <state key="normal" title="Image Recognition">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="ZTy-68-XtF" kind="show" id="Xt4-L5-eGR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lf-pY-WcL">
                                         <rect key="frame" x="0.0" y="92" width="263" height="30"/>
@@ -140,7 +144,83 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046" y="290"/>
+            <point key="canvasLocation" x="2263" y="-413"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oB4-hq-w70">
+            <objects>
+                <viewController id="ZTy-68-XtF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1UX-t7-fCL"/>
+                        <viewControllerLayoutGuide type="bottom" id="iHP-dz-L9e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VMd-Yw-zWr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="BMG-8q-sim">
+                                <rect key="frame" x="40" y="84" width="295" height="287"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Put your webpage URL here" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="0Xp-YM-pIu">
+                                        <rect key="frame" x="0.0" y="0.0" width="294.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="nCu-v5-VV2"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH1-nN-u1Z">
+                                        <rect key="frame" x="0.0" y="46" width="295" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="NpS-d8-4C2"/>
+                                        </constraints>
+                                        <state key="normal" title="Visual Analysis"/>
+                                        <connections>
+                                            <action selector="checkButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkc-dd-bFC"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZx-da-k8c">
+                                        <rect key="frame" x="0.0" y="92" width="295" height="157.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bZx-da-k8c" secondAttribute="height" multiplier="15:8" id="921-ww-jIy"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-05-PYu">
+                                        <rect key="frame" x="0.0" y="265.5" width="295" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="ThA-Sh-LmW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eH1-nN-u1Z" secondAttribute="trailing" id="69I-OD-76w"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Xp-YM-pIu" secondAttribute="trailing" id="9cS-yB-pKi"/>
+                                    <constraint firstItem="vm8-05-PYu" firstAttribute="leading" secondItem="BMG-8q-sim" secondAttribute="leading" id="9zW-9u-b0Q"/>
+                                    <constraint firstItem="eH1-nN-u1Z" firstAttribute="leading" secondItem="BMG-8q-sim" secondAttribute="leading" id="Nx2-Oc-GA1"/>
+                                    <constraint firstAttribute="trailing" secondItem="vm8-05-PYu" secondAttribute="trailing" id="Z81-WX-JJS"/>
+                                    <constraint firstAttribute="trailing" secondItem="bZx-da-k8c" secondAttribute="trailing" id="ZRg-sq-kwM"/>
+                                    <constraint firstItem="0Xp-YM-pIu" firstAttribute="top" secondItem="BMG-8q-sim" secondAttribute="top" id="Zcg-T3-Kh2"/>
+                                    <constraint firstItem="bZx-da-k8c" firstAttribute="leading" secondItem="BMG-8q-sim" secondAttribute="leading" id="m4H-2a-rQH"/>
+                                    <constraint firstItem="0Xp-YM-pIu" firstAttribute="leading" secondItem="BMG-8q-sim" secondAttribute="leading" id="plW-3f-uCV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BMG-8q-sim" firstAttribute="top" secondItem="1UX-t7-fCL" secondAttribute="bottom" constant="20" id="Dj2-C2-FSq"/>
+                            <constraint firstItem="BMG-8q-sim" firstAttribute="leading" secondItem="VMd-Yw-zWr" secondAttribute="leadingMargin" constant="24" id="Ewo-lA-NN8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BMG-8q-sim" secondAttribute="trailing" constant="24" id="b2u-lj-qPL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jc4-hZ-93z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494" y="257"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F99-fV-bcq">
