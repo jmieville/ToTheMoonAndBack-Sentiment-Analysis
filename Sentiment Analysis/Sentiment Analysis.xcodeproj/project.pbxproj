@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2225CA2C5F24305C779283E8 /* Pods_Sentiment_AnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2097955ECB7730CC64B31E68 /* Pods_Sentiment_AnalysisTests.framework */; };
 		495E1A7C1E8814B6006A1710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7B1E8814B6006A1710 /* AppDelegate.swift */; };
-		495E1A7E1E8814B6006A1710 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7D1E8814B6006A1710 /* MainVC.swift */; };
+		495E1A7E1E8814B6006A1710 /* SentimentAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7D1E8814B6006A1710 /* SentimentAnalysisVC.swift */; };
 		495E1A811E8814B6006A1710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A7F1E8814B6006A1710 /* Main.storyboard */; };
 		495E1A831E8814B6006A1710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A821E8814B6006A1710 /* Assets.xcassets */; };
 		495E1A861E8814B6006A1710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */; };
@@ -36,6 +36,7 @@
 		49CB7C4F1E88347E00A47585 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C3B1E88347E00A47585 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		49CB7C521E8836DB00A47585 /* AlchemyLanguageV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49CB7C531E8836DB00A47585 /* RestKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49CB7C351E88347E00A47585 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49CB7C551E8975C500A47585 /* ImageRecognitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB7C541E8975C500A47585 /* ImageRecognitionVC.swift */; };
 		6889441D1DB462B2F5522647 /* Pods_Sentiment_Analysis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69815246BAC8638045956271 /* Pods_Sentiment_Analysis.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +70,7 @@
 		2097955ECB7730CC64B31E68 /* Pods_Sentiment_AnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentiment_AnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E1A781E8814B6006A1710 /* Sentiment Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sentiment Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E1A7B1E8814B6006A1710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		495E1A7D1E8814B6006A1710 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		495E1A7D1E8814B6006A1710 /* SentimentAnalysisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisVC.swift; sourceTree = "<group>"; };
 		495E1A801E8814B6006A1710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		495E1A821E8814B6006A1710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495E1A851E8814B6006A1710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 		49CB7C391E88347E00A47585 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
 		49CB7C3A1E88347E00A47585 /* TradeoffAnalyticsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TradeoffAnalyticsV1.framework; path = Carthage/Build/iOS/TradeoffAnalyticsV1.framework; sourceTree = "<group>"; };
 		49CB7C3B1E88347E00A47585 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		49CB7C541E8975C500A47585 /* ImageRecognitionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecognitionVC.swift; sourceTree = "<group>"; };
 		53D185EACE3980691FEE6292 /* Pods-Sentiment AnalysisTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment AnalysisTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment AnalysisTests/Pods-Sentiment AnalysisTests.release.xcconfig"; sourceTree = "<group>"; };
 		69815246BAC8638045956271 /* Pods_Sentiment_Analysis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentiment_Analysis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D82404DB491C52EF4078F0 /* Pods-Sentiment Analysis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment Analysis.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment Analysis/Pods-Sentiment Analysis.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,12 +168,10 @@
 		495E1A7A1E8814B6006A1710 /* Sentiment Analysis */ = {
 			isa = PBXGroup;
 			children = (
-				495E1A7B1E8814B6006A1710 /* AppDelegate.swift */,
-				495E1A7D1E8814B6006A1710 /* MainVC.swift */,
-				495E1A7F1E8814B6006A1710 /* Main.storyboard */,
-				495E1A821E8814B6006A1710 /* Assets.xcassets */,
-				495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */,
-				495E1A871E8814B6006A1710 /* Info.plist */,
+				49CB7C591E8975F100A47585 /* Controller */,
+				49CB7C581E8975EA00A47585 /* View */,
+				49CB7C561E8975CF00A47585 /* Model */,
+				49CB7C5A1E89760200A47585 /* Resources */,
 			);
 			path = "Sentiment Analysis";
 			sourceTree = "<group>";
@@ -210,6 +210,41 @@
 				49CB7C3B1E88347E00A47585 /* VisualRecognitionV3.framework */,
 			);
 			name = Framework;
+			sourceTree = "<group>";
+		};
+		49CB7C561E8975CF00A47585 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				495E1A7B1E8814B6006A1710 /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		49CB7C581E8975EA00A47585 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				495E1A7F1E8814B6006A1710 /* Main.storyboard */,
+				495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		49CB7C591E8975F100A47585 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				495E1A7D1E8814B6006A1710 /* SentimentAnalysisVC.swift */,
+				49CB7C541E8975C500A47585 /* ImageRecognitionVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		49CB7C5A1E89760200A47585 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				495E1A821E8814B6006A1710 /* Assets.xcassets */,
+				495E1A871E8814B6006A1710 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		D08AE8BA611C7F34AD24CBE9 /* Frameworks */ = {
@@ -453,8 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				495E1A7E1E8814B6006A1710 /* MainVC.swift in Sources */,
+				495E1A7E1E8814B6006A1710 /* SentimentAnalysisVC.swift in Sources */,
 				495E1A7C1E8814B6006A1710 /* AppDelegate.swift in Sources */,
+				49CB7C551E8975C500A47585 /* ImageRecognitionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

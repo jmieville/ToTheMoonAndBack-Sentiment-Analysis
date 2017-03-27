@@ -9,7 +9,7 @@
 import UIKit
 import AlchemyLanguageV1
 
-class MainVC: UIViewController {
+class SentimentAnalysisVC: UIViewController {
 
     @IBOutlet weak var textFieldLabel: UITextField!
     @IBOutlet weak var buttonLabel: UIButton!
