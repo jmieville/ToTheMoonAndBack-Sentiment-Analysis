@@ -9,7 +9,7 @@
 import UIKit
 import AlchemyLanguageV1
 
-class MainVC: UIViewController {
+class SentimentAnalysisVC: UIViewController {
 
     @IBOutlet weak var textFieldLabel: UITextField!
     @IBOutlet weak var buttonLabel: UIButton!
@@ -23,7 +23,6 @@ class MainVC: UIViewController {
         NSLog(textFieldLabel.text!)
         
         // Check Sentiment
-        let apiKey = "ef40cc854d6cd59e42c11dc9174b6e4257bff0ef"
         let alchemyLanguage = AlchemyLanguage(apiKey: apiKey)
         
         // alchemy language
