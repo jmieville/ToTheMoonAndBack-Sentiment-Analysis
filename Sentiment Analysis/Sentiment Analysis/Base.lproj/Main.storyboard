@@ -49,9 +49,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lf-pY-WcL">
                                         <rect key="frame" x="0.0" y="92" width="263" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Text To Speech">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="d3R-Up-I62" kind="show" id="9dH-jZ-Lyg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmK-sN-sgQ">
                                         <rect key="frame" x="0.0" y="138" width="263" height="30"/>
@@ -178,7 +181,6 @@
                                         <state key="normal" title="Visual Analysis"/>
                                         <connections>
                                             <action selector="analysisButtonPressedWithSender:" destination="ZTy-68-XtF" eventType="touchUpInside" id="DqQ-Yl-rz6"/>
-                                            <action selector="checkButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkc-dd-bFC"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZx-da-k8c">
@@ -226,6 +228,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jc4-hZ-93z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2245.5999999999999" y="258.62068965517244"/>
+        </scene>
+        <!--Text To SpeechVC-->
+        <scene sceneID="IKv-91-me3">
+            <objects>
+                <viewController id="d3R-Up-I62" customClass="TextToSpeechVC" customModule="Sentiment_Analysis" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hL4-hh-ETw"/>
+                        <viewControllerLayoutGuide type="bottom" id="eqB-Tj-Wxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="chO-at-r13">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="9AI-Ct-moK">
+                                <rect key="frame" x="24" y="88" width="327" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello, this is me speaking to you." borderStyle="roundedRect" placeholder="Put your webpage URL here" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-fM-qD9">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Cs9-mV-CTV"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PnT-7R-tqE">
+                                        <rect key="frame" x="0.0" y="46" width="327" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="vsu-kr-Ggh"/>
+                                        </constraints>
+                                        <state key="normal" title="Watson speaking"/>
+                                        <connections>
+                                            <action selector="speakButtonPressed:" destination="d3R-Up-I62" eventType="touchUpInside" id="Two-B6-ZtR"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kvM-uf-pK3">
+                                        <rect key="frame" x="0.0" y="92" width="327" height="29"/>
+                                        <segments>
+                                            <segment title="Watson"/>
+                                            <segment title="Allyson"/>
+                                            <segment title="Kate"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kvM-uf-pK3" secondAttribute="trailing" id="AdY-bU-Uhg"/>
+                                    <constraint firstItem="ZeI-fM-qD9" firstAttribute="top" secondItem="9AI-Ct-moK" secondAttribute="top" id="SNs-te-4PG"/>
+                                    <constraint firstItem="kvM-uf-pK3" firstAttribute="leading" secondItem="9AI-Ct-moK" secondAttribute="leading" id="Y8e-kQ-24e"/>
+                                    <constraint firstItem="PnT-7R-tqE" firstAttribute="leading" secondItem="9AI-Ct-moK" secondAttribute="leading" id="ZRT-fd-mdE"/>
+                                    <constraint firstAttribute="bottom" secondItem="kvM-uf-pK3" secondAttribute="bottom" id="ZWX-gO-wne"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZeI-fM-qD9" secondAttribute="trailing" id="nsx-gJ-18S"/>
+                                    <constraint firstItem="ZeI-fM-qD9" firstAttribute="leading" secondItem="9AI-Ct-moK" secondAttribute="leading" id="ojm-AO-Qkf"/>
+                                    <constraint firstAttribute="trailing" secondItem="PnT-7R-tqE" secondAttribute="trailing" id="t78-s7-TW3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9AI-Ct-moK" secondAttribute="trailing" constant="24" id="HMq-79-aJn"/>
+                            <constraint firstItem="9AI-Ct-moK" firstAttribute="leading" secondItem="chO-at-r13" secondAttribute="leading" constant="24" id="Lxk-6l-qfh"/>
+                            <constraint firstItem="9AI-Ct-moK" firstAttribute="top" secondItem="hL4-hh-ETw" secondAttribute="bottom" constant="24" id="dx3-AI-GZ3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textFieldLabel" destination="ZeI-fM-qD9" id="3CQ-kz-4ov"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gQ-fg-mPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="997"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F99-fV-bcq">
