@@ -177,6 +177,7 @@
                                         </constraints>
                                         <state key="normal" title="Visual Analysis"/>
                                         <connections>
+                                            <action selector="analysisButtonPressedWithSender:" destination="ZTy-68-XtF" eventType="touchUpInside" id="DqQ-Yl-rz6"/>
                                             <action selector="checkButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkc-dd-bFC"/>
                                         </connections>
                                     </button>
@@ -217,6 +218,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="BMG-8q-sim" secondAttribute="trailing" constant="24" id="b2u-lj-qPL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonLabel" destination="eH1-nN-u1Z" id="VSh-s1-drd"/>
+                        <outlet property="statusLabel" destination="vm8-05-PYu" id="7fu-HL-Pan"/>
+                        <outlet property="textFieldLabel" destination="0Xp-YM-pIu" id="UbP-yd-iKV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jc4-hZ-93z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

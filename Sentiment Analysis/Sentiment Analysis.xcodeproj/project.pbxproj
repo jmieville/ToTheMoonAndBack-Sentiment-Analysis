@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2225CA2C5F24305C779283E8 /* Pods_Sentiment_AnalysisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2097955ECB7730CC64B31E68 /* Pods_Sentiment_AnalysisTests.framework */; };
+		4901C1D41E897AC300CE9131 /* VisualRecognitionV3.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49CB7C3B1E88347E00A47585 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4901C1D71E897B0400CE9131 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901C1D61E897B0400CE9131 /* Constants.swift */; };
 		495E1A7C1E8814B6006A1710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7B1E8814B6006A1710 /* AppDelegate.swift */; };
 		495E1A7E1E8814B6006A1710 /* SentimentAnalysisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A7D1E8814B6006A1710 /* SentimentAnalysisVC.swift */; };
 		495E1A811E8814B6006A1710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A7F1E8814B6006A1710 /* Main.storyboard */; };
@@ -57,6 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4901C1D41E897AC300CE9131 /* VisualRecognitionV3.framework in CopyFiles */,
 				49CB7C521E8836DB00A47585 /* AlchemyLanguageV1.framework in CopyFiles */,
 				49CB7C531E8836DB00A47585 /* RestKit.framework in CopyFiles */,
 			);
@@ -68,6 +71,7 @@
 		04CB70301A42103F575A9F20 /* Pods-Sentiment Analysis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment Analysis.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment Analysis/Pods-Sentiment Analysis.debug.xcconfig"; sourceTree = "<group>"; };
 		11871199676AE413BE3A94A3 /* Pods-Sentiment AnalysisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentiment AnalysisTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sentiment AnalysisTests/Pods-Sentiment AnalysisTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2097955ECB7730CC64B31E68 /* Pods_Sentiment_AnalysisTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentiment_AnalysisTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4901C1D61E897B0400CE9131 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		495E1A781E8814B6006A1710 /* Sentiment Analysis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sentiment Analysis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E1A7B1E8814B6006A1710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		495E1A7D1E8814B6006A1710 /* SentimentAnalysisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentAnalysisVC.swift; sourceTree = "<group>"; };
@@ -144,6 +148,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4901C1D51E897AF700CE9131 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4901C1D61E897B0400CE9131 /* Constants.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		495E1A6F1E8814B6006A1710 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +180,7 @@
 		495E1A7A1E8814B6006A1710 /* Sentiment Analysis */ = {
 			isa = PBXGroup;
 			children = (
+				4901C1D51E897AF700CE9131 /* Services */,
 				49CB7C591E8975F100A47585 /* Controller */,
 				49CB7C581E8975EA00A47585 /* View */,
 				49CB7C561E8975CF00A47585 /* Model */,
@@ -384,6 +397,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/AlchelmyLanguageV1.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
 			);
 			outputPaths = (
 			);
@@ -491,6 +505,7 @@
 				495E1A7E1E8814B6006A1710 /* SentimentAnalysisVC.swift in Sources */,
 				495E1A7C1E8814B6006A1710 /* AppDelegate.swift in Sources */,
 				49CB7C551E8975C500A47585 /* ImageRecognitionVC.swift in Sources */,
+				4901C1D71E897B0400CE9131 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
