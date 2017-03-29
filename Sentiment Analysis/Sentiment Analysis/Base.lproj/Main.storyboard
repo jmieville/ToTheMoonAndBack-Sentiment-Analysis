@@ -292,7 +292,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="speakButtonPressed" destination="PnT-7R-tqE" id="MFP-Zi-Zd1"/>
                         <outlet property="textFieldLabel" destination="ZeI-fM-qD9" id="3CQ-kz-4ov"/>
+                        <outlet property="voiceSegment" destination="kvM-uf-pK3" id="U3S-Mx-qGx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gQ-fg-mPu" userLabel="First Responder" sceneMemberID="firstResponder"/>

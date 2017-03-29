@@ -16,6 +16,7 @@
 		495E1A831E8814B6006A1710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A821E8814B6006A1710 /* Assets.xcassets */; };
 		495E1A861E8814B6006A1710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */; };
 		495E1A911E8814B6006A1710 /* Sentiment_AnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A901E8814B6006A1710 /* Sentiment_AnalysisTests.swift */; };
+		498103C51E8C28BF00DE0806 /* TextToSpeechV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49CB7C381E88347E00A47585 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		49BA83231E8AF16C0022ABEB /* TextToSpeechVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA83221E8AF16C0022ABEB /* TextToSpeechVC.swift */; };
 		49CB7C3C1E88347E00A47585 /* AlchemyDataNewsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C281E88347E00A47585 /* AlchemyDataNewsV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		49CB7C3D1E88347E00A47585 /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -60,6 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				498103C51E8C28BF00DE0806 /* TextToSpeechV1.framework in CopyFiles */,
 				4901C1D41E897AC300CE9131 /* VisualRecognitionV3.framework in CopyFiles */,
 				49CB7C521E8836DB00A47585 /* AlchemyLanguageV1.framework in CopyFiles */,
 				49CB7C531E8836DB00A47585 /* RestKit.framework in CopyFiles */,
@@ -401,6 +403,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AlchelmyLanguageV1.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TextToSpeechV1.framework",
 			);
 			outputPaths = (
 			);
