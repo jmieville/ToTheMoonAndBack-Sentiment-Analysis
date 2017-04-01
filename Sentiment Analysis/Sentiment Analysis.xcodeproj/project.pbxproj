@@ -17,6 +17,7 @@
 		495E1A861E8814B6006A1710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */; };
 		495E1A911E8814B6006A1710 /* Sentiment_AnalysisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495E1A901E8814B6006A1710 /* Sentiment_AnalysisTests.swift */; };
 		498103C51E8C28BF00DE0806 /* TextToSpeechV1.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 49CB7C381E88347E00A47585 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49B497021E8D8849006ABEE0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B497011E8D8849006ABEE0 /* MainVC.swift */; };
 		49BA83231E8AF16C0022ABEB /* TextToSpeechVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA83221E8AF16C0022ABEB /* TextToSpeechVC.swift */; };
 		49CB7C3C1E88347E00A47585 /* AlchemyDataNewsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C281E88347E00A47585 /* AlchemyDataNewsV1.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		49CB7C3D1E88347E00A47585 /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -85,6 +86,7 @@
 		495E1A8C1E8814B6006A1710 /* Sentiment AnalysisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sentiment AnalysisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495E1A901E8814B6006A1710 /* Sentiment_AnalysisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiment_AnalysisTests.swift; sourceTree = "<group>"; };
 		495E1A921E8814B6006A1710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B497011E8D8849006ABEE0 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		49BA83221E8AF16C0022ABEB /* TextToSpeechVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToSpeechVC.swift; sourceTree = "<group>"; };
 		49CB7C281E88347E00A47585 /* AlchemyDataNewsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyDataNewsV1.framework; path = Carthage/Build/iOS/AlchemyDataNewsV1.framework; sourceTree = "<group>"; };
 		49CB7C291E88347E00A47585 /* AlchemyLanguageV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyLanguageV1.framework; path = Carthage/Build/iOS/AlchemyLanguageV1.framework; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				495E1A7D1E8814B6006A1710 /* SentimentAnalysisVC.swift */,
 				49CB7C541E8975C500A47585 /* ImageRecognitionVC.swift */,
 				49BA83221E8AF16C0022ABEB /* TextToSpeechVC.swift */,
+				49B497011E8D8849006ABEE0 /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495E1A7E1E8814B6006A1710 /* SentimentAnalysisVC.swift in Sources */,
+				49B497021E8D8849006ABEE0 /* MainVC.swift in Sources */,
 				495E1A7C1E8814B6006A1710 /* AppDelegate.swift in Sources */,
 				49BA83231E8AF16C0022ABEB /* TextToSpeechVC.swift in Sources */,
 				49CB7C551E8975C500A47585 /* ImageRecognitionVC.swift in Sources */,
@@ -640,6 +644,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -654,6 +659,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Pods/",
 				);
 				INFOPLIST_FILE = "Sentiment Analysis/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -672,6 +678,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Pods/",
 				);
 				INFOPLIST_FILE = "Sentiment Analysis/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
