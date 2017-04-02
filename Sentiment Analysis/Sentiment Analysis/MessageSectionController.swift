@@ -9,6 +9,6 @@
 import UIKit
 import IGListKit
 
-class TextReplySectionController: IGListSectionController {
-
+class MessageSectionController: IGListSectionController {
+    
 }
