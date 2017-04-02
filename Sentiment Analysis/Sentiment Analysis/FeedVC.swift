@@ -33,7 +33,6 @@ class FeedVC: UIViewController {
         adapter.collectionView = collectionView
         adapter.dataSource = self
         
-        messagingSystem.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,7 +44,7 @@ class FeedVC: UIViewController {
 extension FeedVC: IGListAdapterDataSource {
     // 1
     func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
-        var items: [IGListDiffable] = messagingSystem.messages
+        var items: [IGListDiffable] = messagingSystem.messages as [IGListDiffable]
         // items += loader.entries as [IGListDiffable]
         return items
     }

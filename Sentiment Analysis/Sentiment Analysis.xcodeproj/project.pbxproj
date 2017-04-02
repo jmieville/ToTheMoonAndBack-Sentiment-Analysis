@@ -24,6 +24,8 @@
 		49B5CA1E1E915E8300DD17CE /* WeatherScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5CA1D1E915E8300DD17CE /* WeatherScanner.swift */; };
 		49B5CA201E915EAD00DD17CE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5CA1F1E915EAD00DD17CE /* Weather.swift */; };
 		49B5CA221E915F7000DD17CE /* MessagingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5CA211E915F7000DD17CE /* MessagingSystem.swift */; };
+		49B5CA241E9164B000DD17CE /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5CA231E9164B000DD17CE /* MessageCell.swift */; };
+		49B5CA261E9164DA00DD17CE /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5CA251E9164DA00DD17CE /* TextSize.swift */; };
 		49BA83231E8AF16C0022ABEB /* TextToSpeechVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BA83221E8AF16C0022ABEB /* TextToSpeechVC.swift */; };
 		49C329971E91376000C94987 /* CustomerNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C329961E91376000C94987 /* CustomerNavigationBar.swift */; };
 		49C3299A1E9137FC00C94987 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C329991E9137FC00C94987 /* Theme.swift */; };
@@ -103,6 +105,8 @@
 		49B5CA1D1E915E8300DD17CE /* WeatherScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherScanner.swift; sourceTree = "<group>"; };
 		49B5CA1F1E915EAD00DD17CE /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		49B5CA211E915F7000DD17CE /* MessagingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagingSystem.swift; sourceTree = "<group>"; };
+		49B5CA231E9164B000DD17CE /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		49B5CA251E9164DA00DD17CE /* TextSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
 		49BA83221E8AF16C0022ABEB /* TextToSpeechVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToSpeechVC.swift; sourceTree = "<group>"; };
 		49C329961E91376000C94987 /* CustomerNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerNavigationBar.swift; sourceTree = "<group>"; };
 		49C329991E9137FC00C94987 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 				49C329991E9137FC00C94987 /* Theme.swift */,
 				49B5CA1D1E915E8300DD17CE /* WeatherScanner.swift */,
 				49B5CA211E915F7000DD17CE /* MessagingSystem.swift */,
+				49B5CA251E9164DA00DD17CE /* TextSize.swift */,
 			);
 			name = System;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				495E1A7F1E8814B6006A1710 /* Main.storyboard */,
 				495E1A841E8814B6006A1710 /* LaunchScreen.storyboard */,
 				49C329961E91376000C94987 /* CustomerNavigationBar.swift */,
+				49B5CA231E9164B000DD17CE /* MessageCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -568,8 +574,10 @@
 				49B5CA1A1E915C1700DD17CE /* DateSortable.swift in Sources */,
 				49BA83231E8AF16C0022ABEB /* TextToSpeechVC.swift in Sources */,
 				49C3299C1E91473C00C94987 /* LaliSectionController.swift in Sources */,
+				49B5CA261E9164DA00DD17CE /* TextSize.swift in Sources */,
 				49CB7C551E8975C500A47585 /* ImageRecognitionVC.swift in Sources */,
 				49B5CA181E915BEA00DD17CE /* User.swift in Sources */,
+				49B5CA241E9164B000DD17CE /* MessageCell.swift in Sources */,
 				49B5CA161E91596D00DD17CE /* Message.swift in Sources */,
 				49C329971E91376000C94987 /* CustomerNavigationBar.swift in Sources */,
 				4901C1D71E897B0400CE9131 /* Constants.swift in Sources */,
