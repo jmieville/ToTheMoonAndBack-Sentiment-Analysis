@@ -304,7 +304,7 @@
         <!--FeedVC-->
         <scene sceneID="D9v-hL-iaK">
             <objects>
-                <viewController id="JdB-vQ-xFq" customClass="FeedVC" customModule="Sentiment_Analysis" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JdB-vQ-xFq" customClass="FeedVC" customModule="Sentiment_Analysis" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HaA-YK-aOP"/>
                         <viewControllerLayoutGuide type="bottom" id="pSS-oR-xwS"/>

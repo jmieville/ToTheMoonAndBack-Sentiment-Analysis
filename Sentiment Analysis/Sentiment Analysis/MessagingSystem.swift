@@ -9,7 +9,7 @@
 import Foundation
 
 protocol MessagingSystemDelegate: class {
-    func MessagingSystemDidUpdateMessages(MessagingSystem: MessagingSystem)
+    func messagingSystemDidUpdateMessages(messagingSystem: MessagingSystem)
 }
 
 private func delay(time: Double = 1, execute work: @escaping @convention(block) () -> Swift.Void) {
@@ -34,7 +34,7 @@ class MessagingSystem {
         return arr
         }() {
         didSet {
-            delegate?.MessagingSystemDidUpdateMessages(MessagingSystem: self)
+            delegate?.messagingSystemDidUpdateMessages(messagingSystem: self)
         }
     }
     
