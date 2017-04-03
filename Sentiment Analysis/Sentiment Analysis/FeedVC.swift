@@ -34,6 +34,7 @@ class FeedVC: UIViewController {
         adapter.dataSource = self
         
         messagingSystem.delegate = self
+        messagingSystem.connect()
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,17 +46,32 @@ class FeedVC: UIViewController {
 extension FeedVC: IGListAdapterDataSource {
     // 1
     func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
-        var items: [IGListDiffable] = messagingSystem.messages
+        let items: [IGListDiffable] = messagingSystem.messages as! [IGListDiffable]
+        // items += messagingSystem.messages as [IGListDiffable]
         // items += loader.entries as [IGListDiffable]
-        return items
+        return items.sorted(by: { (left: Any, right: Any) -> Bool in
+            if let left = left as? DateSortable, let right = right as? DateSortable {
+                return left.date > right.date
+            }
+            return false
+        })
     }
     
     // 2
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
-        
-        return MessageSectionController()
+        if object is Message {
+            return MessageSectionController()
+        } else {
+            return IGListSectionController()
+        }
     }
     
     // 3
     func emptyView(for listAdapter: IGListAdapter) -> UIView? { return nil }
+}
+
+extension FeedVC: MessagingSystemDelegate {
+    func messagingSystemDidUpdateMessages(messagingSystem: MessagingSystem) {
+        adapter.performUpdates(animated: true)
+    }
 }
