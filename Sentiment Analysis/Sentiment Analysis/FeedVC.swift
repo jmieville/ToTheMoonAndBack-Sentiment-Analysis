@@ -46,8 +46,8 @@ class FeedVC: UIViewController {
 extension FeedVC: IGListAdapterDataSource {
     // 1
     func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
-        let items: [IGListDiffable] = messagingSystem.messages as! [IGListDiffable]
-        // items += messagingSystem.messages as [IGListDiffable]
+        var items = [IGListDiffable]()
+        items += messagingSystem.messages as! [IGListDiffable]
         // items += loader.entries as [IGListDiffable]
         return items.sorted(by: { (left: Any, right: Any) -> Bool in
             if let left = left as? DateSortable, let right = right as? DateSortable {
